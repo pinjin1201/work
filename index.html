@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Fashion Diary</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="title">Fashion Diary</div>
+        <div class="menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+            <div onclick="closeMobileMenu();" class="close">X</div>
+        </div>
+        <div onclick="openMobileMenu();" class="mobile-menu-trigger">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="words">STYLE IS A<br />CHOICE.<br />MAKE YOURS.</div>
+    </nav>
+    <!-- section.gallery -->
+    <section class="gallery">
+        <!-- left col -->
+        <div class="col">
+            <!-- left col picture -->
+            <div class="block picture pic-1">
+                <div class="words">
+                    <div class="title">Read</div>
+                    <div class="story">THE BLOG</div>
+                    <div class="action">
+                        <span class="btn">
+                            Read More
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- left col text -->
+            <div class="block text">
+                <div class="words">
+                    <div class="title">Hello</div>
+                    <div class="story">I'm Pin Jin</div>
+                    <div class="action">
+                        <span class="btn">
+                            Read More
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right col -->
+        <div class="col">
+            <!-- right col text -->
+            <div class="block text">
+                <div class="words">
+                    <div class="title">Advertise with</div>
+                    <div class="story">Fashion Diva</div>
+                    <div class="action">
+                        <span class="btn">
+                            Read More
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- right col picture -->
+            <div class="block picture pic-2">
+                <div class="words">
+                    <div class="title">Contribute</div>
+                    <div class="story">TO THE BLOG</div>
+                    <div class="action">
+                        <span class="btn">
+                            Read More
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="block one">
+            <img onmouseover="picOneOver();" onmouseout="picOneOut();" id="pic-1" class="pic pic-1" src="article-1.jpg" />
+            <div class="word">
+                <div class="title title-1">What I Wore: Travel<br />Edition</div>
+                <div class="text">Create a blog post subitile that summarizes your post in
+                    a few short,punchy sentences and entices your
+                    audience to continue reading Wel...
+                </div>
+                <div class="line"></div>
+                <div class="else">
+                    <div class="num">85 views</div>
+                    <div class="write">Write a comment</div>
+                </div>
+            </div>
+        </div>
+        <div class="block two">
+            <img onmouseover="picTwoOver();" onmouseout="picTwoOut();" id="pic-2" class="pic pic-2" src="article-2.jpg" />
+            <div class="word">
+                <div class="title title-2">Picking the Perfect Booties<br />for You</div>
+                <div class="text">Create a blog post subitile that summarizes your post in
+                    a few short,punchy sentences and entices your
+                    audience to continue reading Wel...
+                </div>
+                <div class="line"></div>
+                <div class="else">
+                    <div class="num">85 views</div>
+                    <div class="write">Write a comment</div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="footer">
+        <div class="small">&#169 2021 By PinGin</div>
+    </div>
+    <!-- js -->    
+	<script src="index.js"></script>
+</body>
+</html>

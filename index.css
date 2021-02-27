@@ -1,0 +1,288 @@
+/* nav */
+body{
+    margin:0px;
+    font-size:20px;
+    font-family:arial,sans-serif;
+}
+nav{
+    height:900px;
+    background-image:url("bg.jpg");
+    background-size:cover;
+    text-align:center;
+}
+/* nav 標題 */
+nav>.title{
+    font-family:'Dancing Script', cursive;
+    font-size:2em;
+    padding:30px 0px 50px 0px;
+}
+/* nav menu */
+nav>.menu{
+    display:flex;justify-content:center;
+    font-size:0.7em;
+}
+nav>.menu>.item{
+    margin:30px;
+    margin-bottom:220px;
+    color:#222;
+    text-shadow:0px 0px 5px #fff;
+    transition:transform 0.5s;
+}
+nav>.menu>.item:hover{
+    color:#000;
+    transform:scale(1.1,1.1);
+    cursor:pointer;
+}
+/* nav mobile-menu */
+nav>.mobile-menu{
+    position:fixed;
+    top:0px;left:0px;
+    width:100%;height:100%;
+    background-color:rgba(255,255,255,0.9);
+    color:#222;font-size:0.7em;
+    display:none;
+}
+nav>.mobile-menu>.item{
+    margin-top:30px;
+    cursor:pointer;
+}
+nav>.mobile-menu>.close{
+    position:absolute;
+    top:10px;right:10px;
+    cursor:pointer;
+}
+/* nav mobile-menu-trigger */
+nav>.mobile-menu-trigger{
+    display:none;
+    justify-content:center;
+    margin-bottom:120px;
+}
+nav>.mobile-menu-trigger>.lines{
+    width:40px;
+    cursor:pointer;
+}
+nav>.mobile-menu-trigger>.lines>.line{
+    height:2px;
+    background-color:#000;
+    margin-bottom:5px;
+}
+/* nav 內文 */
+nav>.words{
+    font-size:3em;
+    line-height:1.3em;
+    letter-spacing:3px;
+}
+/* section.gallery 中間區塊 */
+section.gallery{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+section.gallery>.col{
+    width:450px;
+    margin:20px;
+    text-align:center;
+}
+/* section.gallery picture */
+section.gallery>.col>.picture{
+    height:500px;
+    color:#fff;
+}
+section.gallery>.col>.pic-1{
+    background-image:url("gallery-1.jpg");
+    background-size:cover;
+}
+section.gallery>.col>.pic-2{
+    background-image:url("gallery-2.jpg");
+    background-size:cover;
+}
+/* section.gallery text */
+section.gallery>.col>.text{
+    height:300px;
+    border:4px solid #000;
+}
+/* section.gallery block_text */
+section.gallery>.col>.block{
+    margin-bottom:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+section.gallery>.col>.text{
+    line-height:0.9em;
+}
+/* section.gallery words 文字部分 */
+section.gallery>.col>.block>.words>.title{
+    font-family:"Dancing Script",cursive;
+    font-size:2em;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+section.gallery>.col>.block>.words>.story{
+    font-size:1.2em;
+    margin-bottom:35px;
+}
+section.gallery>.col>.block>.words>.action>.btn{
+    color:#fff;
+    font-size:0.8em;
+    border:1px solid #fff;
+    background-color:rgba(0,0,0,0.3);
+    padding:10px 20px;
+    transition:background-color 0.5s;
+}
+section.gallery>.col>.block>.words>.action>.btn:hover{
+    background-color:rgba(0,0,0,1);
+    cursor:pointer;
+}
+
+/* nav、section.gallery  RWD */
+@media (max-width:700px){
+    /* nav */
+    nav{
+        height:600px;
+        background-position:40% center;
+    }
+    nav>.title{
+        padding-bottom:20px;
+        font-size:1.5em;
+    }
+    nav>.words{
+        font-size:2em;
+    }
+    /* section.gallery */
+    section.gallery{
+        flex-wrap:wrap;
+    }
+    section.gallery{
+        width:95%;
+    }
+    section.gallery>.col:last-child{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+}
+@media (max-width:500px){
+    nav>.menu{
+        display:none;
+    }
+    nav>.mobile-menu-trigger{
+        display:flex;
+        margin-top:50px;
+    }
+    section.gallery{
+        width:95%;
+    }
+}
+@media (max-width:370px){
+    nav>.title{
+        font-size:1.2em;
+    }
+    nav>.words{
+        font-size:1.5em;
+    }
+}
+/* article */
+article>.block{
+    width:800px;height:270px;
+    margin:20px auto;
+    margin-bottom:40px;
+    border:2px solid #e0e0e0;
+    display:flex;
+}
+/* article pincure */
+article>.block>.pic{
+    width:50%;
+    opacity:0.75;
+}
+/* article word  */
+article>.block>.word{
+    color:#adadad;
+    font-size:0.7em;
+    padding:30px;
+}
+article>.block>.word>.title{
+    color:#000;
+    font-size:2em;
+    padding-bottom:20px;
+}
+article>.block>.word>.text{
+    line-height:1.3em;
+}
+article>.block>.word>.line{
+    border-bottom:2px solid #e0e0e0;
+    margin-top:40px;
+}
+article>.block>.word>.else{
+    display:flex;
+    margin-top:20px;
+}
+article>.block>.word>.else>.num{
+    margin-right:20px;
+}
+
+/* article RWD */
+@media (max-width:850px){
+    article>.block{
+        width:90%;height:800px;
+        flex-wrap:wrap;
+    }
+    article>.block>.pic{
+        width:100%;
+    }
+    article>.block>.word{
+        width:100%;
+        font-size:0.8em;
+    }
+    article>.block>.word>.title{
+        font-size:1.5em;
+    }
+    article>.block>.word>.line{
+        margin-top:70px;
+    }
+    article>.block>.word>.else{
+        margin-top:35px;
+    }
+}
+@media (max-width:700px){
+    article>.block>.word{
+        font-size:1em;
+    }
+}
+@media (max-width:500px){
+    article>.block>.word>.line{
+        margin-top:100px;
+    }
+    article>.block>.word>.else{
+        margin-top:50px;
+    }
+}
+@media (max-width:370px){
+    article>.block{
+        height:500px;
+    }
+    article>.block>.word{
+        font-size:0.7em;
+    }
+    article>.block>.word>.title{
+        font-size:1.3em;
+    }
+    article>.block>.word>.line{
+        margin-top:60px;
+    }
+    article>.block>.word>.else{
+        margin-top:20px;
+    }
+}
+
+/* footer */
+.footer{
+    height:50px;
+    background-color:#003060;
+    text-align:center;
+    font-size:0.6em;color:#fff;
+    margin-top:100px;
+}
+.footer>.small{
+    padding-top:20px;
+}
